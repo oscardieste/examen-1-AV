@@ -1,0 +1,14 @@
+```
+$TTL 3600
+@   IN  SOA ns.tendaelectronica.int. admin.tendaelectronica.int. (
+    2024111501 ; Serial
+    3600       ; Refresh
+    1800       ; Retry
+    1209600    ; Expire
+    3600 )     ; Minimum TTL
+@   IN  NS  ns.tendaelectronica.int.
+www IN  A   172.16.0.1
+owncloud IN CNAME www
+@   IN  TXT "1234ASDF"
+
+```

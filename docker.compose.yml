@@ -1,0 +1,22 @@
+```
+version: '3.8'
+services:
+  contenedor1:
+     image: alpine 
+     command: tail -f /dev/null
+     networks:
+       red_privada
+        aliases:
+        - nombre_contenedor1
+  contendor2:
+    image:alpine
+    command: tail -f /dev/null
+    networks:
+      red_privada
+         nombres:
+         - nombre_contenedor2
+    networks:
+       red_privada:
+          driver:bridge
+```
+
